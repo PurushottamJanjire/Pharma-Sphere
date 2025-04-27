@@ -1,0 +1,107 @@
+/* Pharma Sphere Styling */
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+header:hover {
+    transform: scale(1.02);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#logout {
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    padding: 8px 15px;
+}
+
+#logout:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #343a40;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .btn {
+    margin: 10px;
+    text-align: left;
+    transition: all 0.3s;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar .btn:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateX(8px) scale(1.05);
+}
+
+/* Table Styling */
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    transition: all 0.3s;
+    transform: scale(1.02);
+}
+
+/* Form Controls Hover Effects */
+.form-control:hover {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Buttons Hover Effects */
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #003f7f);
+    transform: scale(1.1);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #6c757d, #495057);
+    transform: scale(1.1);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #a71d2a, #7a101d);
+    transform: scale(1.1);
+}
+
+/* Footer Hover Effect */
+footer:hover {
+    background: #23272b;
+    transform: scale(1.02);
+}

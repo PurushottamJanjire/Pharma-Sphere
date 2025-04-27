@@ -1,0 +1,123 @@
+/* Header Styling */
+  body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #0066ff, #00ccff);
+            padding: 10px 20px;
+            color: white;
+        }
+
+        #toggleSidebar {
+            font-size: 24px;
+            background: transparent;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .header-content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #logout {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+
+        .sidebar {
+            width: 220px;
+            min-height: 100vh;
+            background-color: #003366;
+            padding: 15px;
+            display: none;
+            flex-direction: column;
+        }
+
+        .sidebar.show {
+            display: flex;
+        }
+
+        .sidebar .btn {
+            margin-bottom: 10px;
+            width: 100%;
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+        footer {
+       
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        footer button {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+        }
+
+/* Toggle Sidebar Button - Moved to Left */
+#toggleSidebar {
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#toggleSidebar:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+/* Header Text - In One Line */
+header .header-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Logout Button - Aligned to Right */
+#logout {
+    border-radius: 10px;
+    padding: 5px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    transition: 0.3s;
+}
+
+#logout:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
